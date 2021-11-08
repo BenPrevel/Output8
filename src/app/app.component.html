@@ -1,0 +1,7 @@
+<ul *ngFor="let onomatopia of onomatopias">
+  <li>{{ onomatopia }}</li>
+</ul>
+
+<app-create-onomatopia
+  (sendOnomatopia)="onReceivNewOnomatopia($event)"
+></app-create-onomatopia>
